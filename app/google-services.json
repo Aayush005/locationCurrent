@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "782403076013",
+    "firebase_url": "https://hackcbs-37099.firebaseio.com",
+    "project_id": "hackcbs-37099",
+    "storage_bucket": "hackcbs-37099.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:782403076013:android:59ef9986581ddbcc",
+        "android_client_info": {
+          "package_name": "com.yayandroid.locationmanager.HackCBS"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "782403076013-vniqgjtmcp5ps7nnfn813hrg3qb7ma8f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8jG017fLxmsufFinOjPkm10y6gXq0Lr0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

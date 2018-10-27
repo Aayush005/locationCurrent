@@ -1,0 +1,38 @@
+apply plugin: 'com.android.library'
+apply plugin: 'jacoco-android'
+
+android {
+    compileSdkVersion versions.compileSdkVersion
+    buildToolsVersion versions.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion versions.minSdkVersion
+        targetSdkVersion versions.targetSdkVersion
+        versionCode = Integer.parseInt(VERSION_CODE)
+        versionName = VERSION_NAME
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+        debug {
+            testCoverageEnabled true
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    classpath 'com.google.gms:google-services:4.0.1'
+
+    compile libraries.appCompat
+    compile libraries.googlePlayServices
+
+    testCompile libraries.junit
+    testCompile libraries.assertJ
+    testCompile libraries.mockito
+}
+
+apply from: 'maven_push.gradle'

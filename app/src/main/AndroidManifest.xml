@@ -1,0 +1,35 @@
+<manifest package="com.yayandroid.locationmanager.HackCBS"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Required to check whether user has network connection or not -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Dangerous Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name="com.yayandroid.locationmanager.HackCBS.SampleApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/HackCBS"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="com.yayandroid.locationmanager.HackCBS.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.yayandroid.locationmanager.HackCBS.activity.SampleActivity" />
+        <activity android:name="com.yayandroid.locationmanager.HackCBS.fragment.SampleFragmentActivity" />
+        <activity android:name="com.yayandroid.locationmanager.HackCBS.service.SampleServiceActivity" />
+
+        <service android:name="com.yayandroid.locationmanager.HackCBS.service.SampleService" />
+
+    </application>
+
+</manifest>
